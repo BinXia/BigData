@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+import numpy as np
 
 '''
 定义训练数据batch的大小
@@ -38,7 +38,7 @@ train_step = tf.train.AdamOptimizer(0.001).minimize(cross_entropy)
 '''
 通过随机数生成一个模拟数据集
 '''
-rdm = RandomState(1)
+rdm = np.random.RandomState(1)
 dataset_size = 128
 INPUT = rdm.rand(dataset_size, 2)
 
@@ -63,14 +63,14 @@ with tf.Session() as sess:
 	'''
 	在训练之前神经网络参数的值
 	'''
-	print sess.run(w1)
-	print sess.run(w2)
+	print(sess.run(w1))
+	print(sess.run(w2))
 
 	'''
 	设定迭代的次数
 	'''
 	epoch = 5000
-	for i in xrange(epoch):
+	for i in range(epoch):
 		'''
 		每次选取batch_size个样本进行训练
 		'''
@@ -84,13 +84,13 @@ with tf.Session() as sess:
 		'''
 		每隔一段时间计算在所有数据上的交叉熵并输出
 		'''
-		if i % 1000:
+		if i % 1000 == 0:
 			total_cross_entropy = sess.run(cross_entropy,feed_dict={x:INPUT,y_:LABEL})
-			print "After %d training step(s), cross entropy on all data data is %g"%(i, total_cross_entropy)
+			print("After %d training step(s), cross entropy on all data data is %g"%(i, total_cross_entropy))
 
 		'''
 		在训练之后的神经网络参数的值
 		'''
-		print sess.run(w1)
-		print sess.run(w2)
+		print(sess.run(w1))
+		print(sess.run(w2))
 		
