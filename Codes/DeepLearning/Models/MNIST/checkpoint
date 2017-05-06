@@ -1,6 +1,0 @@
-model_checkpoint_path: "LeNet5_model-5001"
-all_model_checkpoint_paths: "LeNet5_model-1001"
-all_model_checkpoint_paths: "LeNet5_model-2001"
-all_model_checkpoint_paths: "LeNet5_model-3001"
-all_model_checkpoint_paths: "LeNet5_model-4001"
-all_model_checkpoint_paths: "LeNet5_model-5001"
