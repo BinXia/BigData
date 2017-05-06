@@ -2,4 +2,5 @@
 *.pyc
 events.out.tfevents.*
 *.gz
-
+*.tar
+*.zip
