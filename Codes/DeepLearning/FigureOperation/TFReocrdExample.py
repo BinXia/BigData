@@ -31,6 +31,7 @@ def Writer():
     pixels = images.shape[1]
     num_examples = mnist.train.num_examples
 
+
     '''
     输出TFRecord文件的地址
     '''
@@ -65,6 +66,7 @@ def Reader():
     创建一个reader来读取TFRecord文件中的样例
     '''
     reader = tf.TFRecordReader()
+
     '''
     创建一个队列来维护输入文件列表
     '''
@@ -114,8 +116,7 @@ def Reader():
 
 
 def main():
-    Writer()
-
+    import FigureOperation
 
 
 if __name__ == '__main__':main()

@@ -42,8 +42,20 @@ threads = [threading.Thread(target=MyLoop, args=(coord, i, )) for i in range(5)]
 '''
 启动所有线程
 '''
-for t in threads:t.start()
+for t in threads:
+	t.start()
 '''
 等待所有线程退出
 '''
 coord.join(threads)
+
+
+
+
+
+
+
+
+
+
+
