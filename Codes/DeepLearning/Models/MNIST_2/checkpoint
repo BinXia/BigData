@@ -1,0 +1,6 @@
+model_checkpoint_path: "AlexNet_model-501"
+all_model_checkpoint_paths: "AlexNet_model-101"
+all_model_checkpoint_paths: "AlexNet_model-201"
+all_model_checkpoint_paths: "AlexNet_model-301"
+all_model_checkpoint_paths: "AlexNet_model-401"
+all_model_checkpoint_paths: "AlexNet_model-501"

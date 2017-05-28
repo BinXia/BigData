@@ -48,6 +48,7 @@ for t in threads:
 等待所有线程退出
 '''
 coord.join(threads)
+<<<<<<< HEAD
 
 
 
@@ -59,3 +60,5 @@ coord.join(threads)
 
 
 
+=======
+>>>>>>> origin/master
